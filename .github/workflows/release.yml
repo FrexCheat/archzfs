@@ -1,13 +1,5 @@
 on:
-  push:
-    branches: [master]
-    paths:
-      - '**.sh'
-      - '.github/workflows/**'
-      - 'build-container/**'
-      - 'packages/**'
-  schedule:
-    - cron: "4 2 * * *"
+  workflow_dispatch:
 
 name: Release
 
